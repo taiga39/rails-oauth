@@ -1580,3 +1580,178 @@ Processing by TestController#index as HTML
 Completed 200 OK in 1201ms (Views: 832.3ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for 172.18.0.1 at 2019-05-01 11:35:29 +0900
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (5.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ vendor/bundle/ruby/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by TestController#index as HTML
+  Rendering test/index.html.erb within layouts/application
+  Rendered test/index.html.erb within layouts/application (36.3ms)
+Completed 500 Internal Server Error in 404ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `pry' for #<Binding:0x00007fabe8a329d8>
+Did you mean?  try):
+    1: <% binding.pry %>
+    2: <div><%= @elements %></div>
+  
+app/views/test/index.html.erb:1:in `_app_views_test_index_html_erb__1311202086894131367_70188159596260'
+Started GET "/" for 172.18.0.1 at 2019-05-01 11:36:39 +0900
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TestController#index as HTML
+  Rendering test/index.html.erb within layouts/application
+  Rendered test/index.html.erb within layouts/application (28.2ms)
+Completed 500 Internal Server Error in 369ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `pry' for #<Binding:0x00007fabe40ee650>
+Did you mean?  try):
+    1: <div><%= @elements %></div>
+    2: <% binding.pry %>
+  
+app/views/test/index.html.erb:2:in `_app_views_test_index_html_erb__1311202086894131367_47292783336900'
+Started GET "/" for 172.18.0.1 at 2019-05-01 11:37:34 +0900
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TestController#index as HTML
+Completed 500 Internal Server Error in 231ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `pry' for #<Binding:0x00007fabe8cf9270>
+Did you mean?  try):
+  
+app/controllers/test_controller.rb:6:in `index'
+Started GET "/" for 172.18.0.1 at 2019-05-01 11:41:15 +0900
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TestController#index as HTML
+Completed 500 Internal Server Error in 189ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `pry' for #<Binding:0x00007fabe9214db8>
+Did you mean?  try):
+  
+app/controllers/test_controller.rb:6:in `index'
+Started GET "/" for 172.18.0.1 at 2019-05-01 11:41:28 +0900
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TestController#index as HTML
+Completed 500 Internal Server Error in 210ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `pry' for #<Binding:0x00007fabdcbae110>
+Did you mean?  try):
+  
+app/controllers/test_controller.rb:6:in `index'
+Started GET "/" for 172.18.0.1 at 2019-05-01 11:43:05 +0900
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TestController#index as HTML
+  Rendering test/index.html.erb within layouts/application
+  Rendered test/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 437ms (Views: 213.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 172.18.0.1 at 2019-05-01 11:44:22 +0900
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TestController#index as HTML
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `pry' for #<Binding:0x00007fabd8012210>
+Did you mean?  try):
+  
+app/controllers/test_controller.rb:3:in `index'
+Started GET "/" for 172.18.0.1 at 2019-05-01 11:56:25 +0900
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (1.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ vendor/bundle/ruby/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (2.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ vendor/bundle/ruby/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by TestController#index as HTML
+  Rendering test/index.html.erb within layouts/application
+  Rendered test/index.html.erb within layouts/application (199.4ms)
+Completed 200 OK in 1316ms (Views: 1067.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 172.18.0.1 at 2019-05-01 11:56:37 +0900
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TestController#index as HTML
+Started GET "/" for 172.18.0.1 at 2019-05-01 11:58:32 +0900
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (4.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ vendor/bundle/ruby/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ vendor/bundle/ruby/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by TestController#index as HTML
+  Rendering test/index.html.erb within layouts/application
+  Rendered test/index.html.erb within layouts/application (147.4ms)
+Completed 200 OK in 1516ms (Views: 1116.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 172.18.0.1 at 2019-05-01 11:58:46 +0900
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TestController#index as HTML
+  Rendering test/index.html.erb within layouts/application
+  Rendered test/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 372ms (Views: 170.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 172.18.0.1 at 2019-05-01 11:58:58 +0900
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TestController#index as HTML
+  Rendering test/index.html.erb within layouts/application
+  Rendered test/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 12067ms (Views: 163.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 172.18.0.1 at 2019-05-01 17:11:21 +0900
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (1.6ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ vendor/bundle/ruby/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by TestController#index as HTML
+Started GET "/" for 172.18.0.1 at 2019-05-01 17:11:59 +0900
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (1.8ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ vendor/bundle/ruby/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by TestController#index as HTML
+  Rendering test/index.html.erb within layouts/application
+  Rendered test/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 4024ms (Views: 218.3ms | ActiveRecord: 0.0ms)
+
+
+  [1m[35m (1.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ bin/rails:4
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT GET_LOCK('7864839756650184315', 0)[0m
+  ↳ bin/rails:4
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ bin/rails:4
+Migrating to DeviseCreateUsers (20190501091649)
+  [1m[35m (40.6ms)[0m  [1m[35mCREATE TABLE `users` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `name` varchar(255) DEFAULT '' NOT NULL, `email` varchar(255) DEFAULT '' NOT NULL, `encrypted_password` varchar(255) DEFAULT '' NOT NULL, `provider` varchar(255) DEFAULT '' NOT NULL, `uid` varchar(255) DEFAULT '' NOT NULL, `reset_password_token` varchar(255), `reset_password_sent_at` datetime, `remember_created_at` datetime, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL)[0m
+  ↳ db/migrate/20190501091649_devise_create_users.rb:5
+  [1m[35m (15.5ms)[0m  [1m[35mCREATE UNIQUE INDEX `index_users_on_name`  ON `users` (`name`) [0m
+  ↳ db/migrate/20190501091649_devise_create_users.rb:42
+  [1m[35m (12.3ms)[0m  [1m[35mCREATE UNIQUE INDEX `index_users_on_email`  ON `users` (`email`) [0m
+  ↳ db/migrate/20190501091649_devise_create_users.rb:43
+  [1m[35m (11.0ms)[0m  [1m[35mCREATE UNIQUE INDEX `index_users_on_reset_password_token`  ON `users` (`reset_password_token`) [0m
+  ↳ db/migrate/20190501091649_devise_create_users.rb:44
+  [1m[35m (12.2ms)[0m  [1m[35mCREATE UNIQUE INDEX `index_users_on_uid_and_provider`  ON `users` (`uid`, `provider`) [0m
+  ↳ db/migrate/20190501091649_devise_create_users.rb:45
+  [1m[35m (0.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:4
+  [1m[36mActiveRecord::SchemaMigration Create (5.2ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20190501091649')[0m
+  ↳ bin/rails:4
+  [1m[35m (3.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:4
+  [1m[36mActiveRecord::InternalMetadata Load (0.9ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  ↳ bin/rails:4
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:4
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:4
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT RELEASE_LOCK('7864839756650184315')[0m
+  ↳ bin/rails:4
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ bin/rails:4
